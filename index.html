@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="css/style.css">
+<title>jquery手机端触屏滑动幻灯片代码演示_大头网</title>
+</head>
+<body>
+<!-- 代码 开始 -->
+<div id="slider-box">
+	<ul id="slider">
+		<li><img src="images/1.jpg" alt="" /></li>
+		<li><img src="images/2.jpg" alt="" /></li>
+		<li><img src="images/3.jpg" alt="" /></li>
+	</ul>
+</div>
+
+<!--js-->
+<script src="js/zepto.min.js"></script>
+<script src="js/zepto.touchSlider.js"></script>
+<script>
+	$(function(){
+		
+		$('#slider-box').touchSlider({
+			box: '#slider-box',
+			arrow: true,
+			auto: true,
+			autoTime: 3000
+		});
+	});
+</script>
+<!-- 代码 结束 -->
+
+
+</body>
+</html>
